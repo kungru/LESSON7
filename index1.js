@@ -7,7 +7,7 @@ document.write( "Bai 1 <br>"+ x +"<br>");
 let y=x/100*10;
 let z=x/100*20;
 let u=x/100*30;
-if (x <7) {console.log(y) & document.write(y +"<br>")} else if (x>=7 & x<15) {console.log(z) & document.write(z +"<br>")} else {console.log(u) & document.write(u +"<br>")};}
+if (x <7) {console.log(y) & document.write("Thuế" + y , "<br>lương ròng" + (x-y) +"<br>")} else if (x>=7 & x<15) {console.log(z) & document.write("Thuế" + z , "<br>lương ròng" + (x-z) +"<br>")} else {console.log(u) & document.write("Thuế" + u,"<br>lương ròng" + (x-u) +"<br>")};}
 //Bai 2
 {
     let x;
@@ -47,15 +47,3 @@ if (x <7) {console.log(y) & document.write(y +"<br>")} else if (x>=7 & x<15) {co
     else  {document.write('<br>Bài 5<br>' + x*20/100 + 'triệu')};
 }
 //Bai 6
-{
-    let  a,b,c;
-a=prompt('nhập a bài 6');
-b=prompt('nhập b bài 6');
-c=prompt('nhập c bài 6');
-let delta;
-delta=b*b - 4*a*c;
-if (a=0 & b=0 ) {document.write('<br>phương trình vô nghiệm')}
-else if (a=0) {document.write('<br>phương trình có nghiệm là' + -c/b)}
-else if (b*b - 4*a*c<0) {document.write('<br>phương trình vô nghiệm')}
-else {document.write('<br>phương trình có nghiệm là:'+ (-b + Math.sqrt(delta))/(2*a), (-b - Math.sqrt(delta))/(2*a))}
-}
