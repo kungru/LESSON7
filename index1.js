@@ -46,7 +46,7 @@ if (x <7) {console.log(y) & document.write("Thuế" + y , "<br>lương ròng" + 
     else if (x>100 & x<=300) {document.write('<br>Bài 5<br>' +x*10/100+ 'triệu')}
     else  {document.write('<br>Bài 5<br>' + x*20/100 + 'triệu')};
 }
-Bai 6
+//Bai 6
 {
     let  a,b,c;
 a=prompt('nhập a bài 6');
