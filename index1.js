@@ -46,4 +46,21 @@ if (x <7) {console.log(y) & document.write("Thuế" + y , "<br>lương ròng" + 
     else if (x>100 & x<=300) {document.write('<br>Bài 5<br>' +x*10/100+ 'triệu')}
     else  {document.write('<br>Bài 5<br>' + x*20/100 + 'triệu')};
 }
-//Bai 6
+Bai 6
+{
+    let  a,b,c;
+a=prompt('nhập a bài 6');
+b=prompt('nhập b bài 6');
+c=prompt('nhập c bài 6');
+console.log(typeof a);
+a=Number(a);
+b=Number(b);
+c=Number(c);
+console.log(typeof a);
+let delta;
+delta=b*b - 4*a*c;
+if (a==0 && b==0 ) {document.write('<br>phương trình vô nghiệm')}
+else if (a==0) {document.write('<br>phương trình có nghiệm là' + -c/b)}
+else if (b*b - 4*a*c<0) {document.write('<br>phương trình vô nghiệm')}
+else {document.write('<br>phương trình có nghiệm là:'+ (-b + Math.sqrt(delta))/(2*a) + ", "+ (-b - Math.sqrt(delta))/(2*a))}
+}
